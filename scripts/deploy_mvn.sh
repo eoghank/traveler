@@ -13,8 +13,8 @@ do
 done
 echo
 echo "Services created. Pushing applications."
-pushd company && cf push -p target/company-0.0.1-SNAPSHOT.jar
+pushd company && cf push -p company/target/company-0.0.1-SNAPSHOT.jar
 popd
-pushd agency && cf push -p target/agency-0.0.1-SNAPSHOT.jar
+pushd agency && cf push -p agency/target/agency-0.0.1-SNAPSHOT.jar
 popd
 echo "" && echo "Done!" && echo ""
